@@ -5,7 +5,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-image: url('../resources/imgs/aboutUs/0016.png');
+    font-family: 'APACfont';
   }
   .root .box1 {
     width: 100%;
@@ -17,28 +17,29 @@
     background-image: url('../resources/imgs/aboutUs/0000.png');
     background-size: 100% 100%;
   }
-  .root .box1 .box1-top .box1-top-header-app {
-    display: none;
-  }
   .root .box1 .box1-top .box1-top-header {
-    height: 60px;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    line-height: 60px;
-    padding: 0 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .root .box1 .box1-top .box1-top-header .box1-top-header-logo {
+    margin-top: 3vw;
+    margin-left: 15vw;
   }
   .root .box1 .box1-top .box1-top-header .box1-top-header-logo img {
     width: 80%;
-    margin-top: 40px;
-    margin-left: 15%;
   }
   .root .box1 .box1-top .box1-top-header .box1-top-header-logo-aa {
-    margin-top: 45px;
-    margin-left: -12%;
+    margin-right: 19vw;
   }
   .root .box1 .box1-top .box1-top-header .box1-top-header-logo-aa a {
-    font-size: 14px;
-    margin: 20px;
+    font-size: 16px;
+    margin: 1vw;
+  }
+  .root .box1 .box1-top .box1-top-header .box1-top-header-app {
+    display: none;
   }
   .root .box1 .box1-top .box1-top-main {
     display: flex;
@@ -280,330 +281,5 @@
   }
   .root .box6 .box6-bot a {
     margin: 0 10px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 1100px) {
-  .root {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-image: url('../resources/imgs/aboutUs/0046.png');
-  }
-  .root .box1 {
-    width: 100%;
-    height: 298vw;
-  }
-  .root .box1 .box1-top {
-    width: 100%;
-    height: 115vw;
-    background-image: url('../resources/imgs/aboutUs/0027.png');
-    background-size: 100% 100%;
-  }
-  .root .box1 .box1-top .box1-top-header {
-    height: 8vw;
-    display: flex;
-    justify-content: space-between;
-    line-height: 8vw;
-    padding: 0 2.667vw;
-  }
-  .root .box1 .box1-top .box1-top-header .box1-top-header-logo img {
-    width: 30vw;
-    margin-top: 10vw;
-    margin-left: 5vw;
-  }
-  .root .box1 .box1-top .box1-top-header .box1-top-header-app {
-    display: block;
-    margin-top: 6vw;
-    /* Style the dropdown content */
-  }
-  .root .box1 .box1-top .box1-top-header .box1-top-header-app .box1-top-header-app-img {
-    width: 6vw;
-    margin-top: 5vw;
-    margin-right: 8vw;
-  }
-  .root .box1 .box1-top .box1-top-header .box1-top-header-app .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 21.333vw;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-    transform: scale(1.1);
-    transform-origin: top;
-    border-radius: 0.6vw;
-    margin-left: -20vw;
-  }
-  .root .box1 .box1-top .box1-top-header .box1-top-header-app .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  .root .box1 .box1-top .box1-top-header .box1-top-header-app .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  .root .box1 .box1-top .box1-top-header .box1-top-header-logo-aa {
-    display: none;
-  }
-  .root .box1 .box1-top .box1-top-main {
-    display: none;
-  }
-  .root .box1 .box1-top .box1-top-main-app {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 45vw;
-  }
-  .root .box1 .box1-top .box1-top-main-app img {
-    width: 30vw;
-  }
-  .root .box1 .box1-bot {
-    display: none;
-  }
-  .root .box1 .box1-bot-app {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-  }
-  .root .box1 .box1-bot-app .box1-bot-app-top {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-  }
-  .root .box1 .box1-bot-app .box1-bot-app-top img:nth-child(1) {
-    margin-top: 15vw;
-    width: 70vw;
-  }
-  .root .box1 .box1-bot-app .box1-bot-app-top img:nth-child(2) {
-    width: 75vw;
-    margin-top: 10vw;
-  }
-  .root .box1 .box1-bot-app .box1-bot-app-top .box1-bot-img-back {
-    margin-top: 16vw;
-    width: 35vw;
-    height: 12vw;
-    background-image: url('../resources/imgs/aboutUs/0031.png');
-    background-size: 100% 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .root .box1 .box1-bot-app .box1-bot-app-top .box1-bot-img-back img:nth-child(1) {
-    margin-top: 0vw;
-    width: 12vw;
-    height: auto;
-  }
-  .root .box1 .box1-bot-app .box1-bot-app-top .box1-bot-img-back img:nth-child(2) {
-    margin-top: 4vw;
-    width: 8vw;
-    margin-left: 1vw;
-    height: auto;
-  }
-  .root .box1 .box1-bot-app .box1-bot-app-dow {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10vw;
-    background-image: url(../resources/imgs/aboutUs/0034.png);
-    background-size: 100% 100%;
-    height: 90vw;
-    width: 100vw;
-    align-items: center;
-  }
-  .root .box1 .box1-bot-app .box1-bot-app-dow .box1-bot-app-dow-1 {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-top: 5vw;
-  }
-  .root .box1 .box1-bot-app .box1-bot-app-dow .box1-bot-app-dow-1 img:nth-child(1) {
-    margin-left: -10vw;
-    width: 95vw;
-  }
-  .root .box1 .box1-bot-app .box1-bot-app-dow .box1-bot-app-dow-1 img:nth-child(2) {
-    margin-left: -85vw;
-    width: 15vw;
-  }
-  .root .box1 .box1-bot-app .box1-bot-app-dow .box1-bot-app-dow-1 img:nth-child(3) {
-    margin-left: 5vw;
-    width: 55vw;
-  }
-  .root .box1 .box1-bot-app .box1-bot-app-dow .box1-bot-app-dow-2 {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-top: 4vw;
-  }
-  .root .box1 .box1-bot-app .box1-bot-app-dow .box1-bot-app-dow-2 img:nth-child(1) {
-    margin-left: -10vw;
-    width: 95vw;
-  }
-  .root .box1 .box1-bot-app .box1-bot-app-dow .box1-bot-app-dow-2 img:nth-child(2) {
-    margin-left: -85vw;
-    width: 15vw;
-  }
-  .root .box1 .box1-bot-app .box1-bot-app-dow .box1-bot-app-dow-2 img:nth-child(3) {
-    margin-left: 5vw;
-    width: 55vw;
-  }
-  .root .box2 {
-    display: none;
-  }
-  .root .box3 {
-    display: none;
-  }
-  .root .box4 {
-    display: none;
-  }
-  .root .box2-app {
-    width: 100%;
-    height: 115vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .root .box2-app img:nth-child(1) {
-    margin-top: 12vw;
-    width: 30vw;
-  }
-  .root .box2-app img:nth-child(2) {
-    margin-top: 8vw;
-    width: 70vw;
-  }
-  .root .box2-app .box2-app-bot {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-  }
-  .root .box2-app .box2-app-bot img {
-    width: 31.5vw;
-    margin: 12vw -3.5vw;
-  }
-  .root .box3-app {
-    width: 100%;
-    height: 110vw;
-    background-image: url('../resources/imgs/aboutUs/0047.png');
-    background-size: 100% 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .root .box3-app img {
-    margin-top: 15vw;
-    width: 70vw;
-  }
-  .root .box4-app {
-    width: 100%;
-    height: 120vw;
-    background-image: url('../resources/imgs/aboutUs/0049.png');
-    background-size: 100% 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .root .box4-app img:nth-child(1) {
-    margin-top: 15vw;
-    width: 70vw;
-  }
-  .root .box4-app img:nth-child(2) {
-    margin-top: 15vw;
-    width: 115vw;
-  }
-  .root .box6 {
-    width: 100%;
-    height: 130vw;
-    background-image: url('../resources/imgs/index/0029.png');
-    background-size: 100% 100%;
-  }
-  .root .box6 .box6-top {
-    width: 100%;
-    height: 120vw;
-    display: flex;
-    flex-direction: column;
-  }
-  .root .box6 .box6-top .box6-top-one {
-    border-right: 0.133vw solid #eee;
-    display: flex;
-    flex-direction: column;
-    margin: 2.667vw;
-    margin-top: 4vw;
-  }
-  .root .box6 .box6-top .box6-top-one img {
-    width: 40vw;
-    margin-top: 6vw;
-  }
-  .root .box6 .box6-top .box6-top-one img:nth-child(2) {
-    display: none;
-  }
-  .root .box6 .box6-top .box6-top-one img:nth-child(3) {
-    width: 65vw;
-  }
-  .root .box6 .box6-top .box6-top-two {
-    display: flex;
-    flex-direction: column;
-    margin-right: 5.333vw;
-    margin: 2.667vw;
-  }
-  .root .box6 .box6-top .box6-top-two img {
-    margin: 1.333vw;
-  }
-  .root .box6 .box6-top .box6-top-two img:nth-child(1) {
-    width: 20vw;
-  }
-  .root .box6 .box6-top .box6-top-two img:nth-child(2) {
-    width: 55vw;
-  }
-  .root .box6 .box6-top .box6-top-two img:nth-child(3) {
-    display: none;
-  }
-  .root .box6 .box6-top .box6-top-three {
-    display: flex;
-    flex-direction: column;
-    margin: 2.667vw;
-  }
-  .root .box6 .box6-top .box6-top-three img {
-    width: 40vw;
-    margin: 1.333vw;
-  }
-  .root .box6 .box6-top .box6-top-three img:nth-child(1) {
-    width: 20vw;
-  }
-  .root .box6 .box6-top .box6-top-four {
-    display: flex;
-    flex-direction: column;
-    margin: 0 5.333vw;
-    position: relative;
-    top: -42.333vw;
-    right: -70vw;
-  }
-  .root .box6 .box6-top .box6-top-four img {
-    width: 16vw;
-    margin: 0.4vw;
-  }
-  .root .box6 .box6-bot {
-    width: 100%;
-    height: 8vw;
-    background-image: url(../resources/imgs/index/0045.png);
-    background-size: 100% 100%;
-    display: flex;
-    justify-content: space-around;
-    line-height: 8vw;
-    color: #fff;
-    position: relative;
-    font-size: 2.6vw;
-    bottom: -2vw;
-  }
-  .root .box6 .box6-bot a {
-    margin: 0 1.333vw;
   }
 }
