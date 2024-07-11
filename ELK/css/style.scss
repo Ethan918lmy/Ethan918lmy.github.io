@@ -1,0 +1,345 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: .14rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "΢���ź�";
+  text-size-adjust: 100%; }
+
+ul, li {
+  list-style: none; }
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 625%; }
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none; }
+
+input, button {
+  outline: 0; }
+
+button {
+  cursor: pointer; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ccc; }
+input{-webkit-appearance:none;}
+
+@mixin num($w,$h){
+    width: $w;
+    height: $h;
+}
+@mixin flex($j:space-between){
+    display: flex;
+    justify-content: $j;
+    align-items: center;
+}
+
+html,body,.wrap{
+    @include num(100%,100%);
+}
+.head{
+    @include num(100%,1.5rem);
+    @include flex();
+    padding:.6rem;
+    .left{
+        img{
+            @include num(.5rem,.5rem);
+        }
+        span{
+            position: relative;
+            top:-.1rem;
+            font-size: .3rem;
+            padding: 0 .1rem;
+        }
+    }
+    .list{
+        display: flex;
+        li{
+            padding: 0 .4rem;
+            a{
+                color: #000;
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+    }
+    .right{
+        line-height: .3rem;
+        span{
+            background:red;
+            color: #fff;
+            padding: .02rem .03rem;
+        }
+    }
+}
+.con{
+    @include num(100%,5rem);
+    overflow: hidden;
+    position: relative;
+    .swiper-slide img{
+        @include num(100%,auto);
+    }
+}
+.box{
+    position: absolute;
+    top:2rem;
+    z-index: 999;
+    width: 6rem;
+    left: 50%;
+    margin-left: -3rem;
+    h3{
+        font-size: .5rem;
+        text-align: center;
+        font-weight: 100;
+    }
+    p{
+        text-align: center;
+        line-height: 50px;
+        background: rgba(0,0,0,0.5);
+        border-radius: .5rem;
+        img{
+            position: absolute;
+            left: 50%;
+            margin-left: -.2rem;
+            
+        }
+        input{
+            border: 0;
+            background: rgba(0,0,0,0);
+            color: #fff;
+            text-align: center;
+        }
+    }
+}
+.miai{
+    @include num(100%,8rem);
+    overflow: hidden;
+    img{
+        @include num(100%,8rem);
+    }
+}
+.h3s{
+    @include num(100%,1rem);
+    h2{
+        text-align: center;
+        line-height: .3rem;
+    }
+    .line{
+        @include num(80%,.01rem);
+        background: #ccc;
+        margin: 50px auto;
+    }
+}
+h4{
+    text-align: center;
+    margin-bottom: .6rem;
+    font-size: .2rem;
+    font-weight: bold;
+}
+.xin{
+    width: 800px;
+    height: 600px;
+    margin: 100px auto;
+}
+.row1,.row5{
+    width: 400px;
+    height: 80px;
+    margin: 0 auto;
+}
+.row2,.row4{
+    width: 550px;
+    height: 80px;
+    margin: 0 auto;
+    transform: translate(0,-20px);
+}
+.row3{
+    width: 700px;
+    height: 80px;
+    margin: 0 auto;
+    clear: both;
+    transform: translate(0,-40px);
+}
+.row4{
+    transform: translate(0,-60px);
+}
+.row5{
+    transform: translate(0,-80px);
+}
+.row6{
+    width: 250px;
+    height: 80px;
+    margin: 0 auto;
+    clear: both;
+    transform: translate(0,-100px);
+}
+.row7{
+    width: 100px;
+    height: 80px;
+    margin: 0 auto;
+    clear: both;
+    transform: translate(0,-120px);
+}
+.box1,.box2,.box3,.box4,.box5{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transform: rotate(45deg);
+    float: left;
+    box-shadow:0px 0px 8px 3px #666;
+}
+.box2,.box3,.box4,.box5{
+    margin-left: 50px;
+}
+.boxs{
+    float: left;
+    margin-left: 50px;;
+}
+.row1 .box2{
+    position: relative;
+    background: #fff;
+    box-shadow:0px 0px 0px 0px #fff;
+}
+.row1 .bos{
+    position: absolute;
+    transform: rotate(-45deg);
+    top:-30px;
+    left:-50px;
+}
+.youshi{
+    @include num(100%,5rem);
+    margin-top: 1rem;
+    clear: both;
+    h3{
+        text-align: center;
+        font-size: .2rem;
+        font-weight: bold;
+        line-height: .5rem;
+    }
+    p{
+        text-align: center;
+        color: #999;
+    }
+    .we{
+        @include num(100%,3rem);
+        margin-top: 1rem;
+        @include flex($j:space-around);
+        dl{
+            dt img{
+                @include num(.5rem,auto)
+            }
+        }
+    }
+}
+
+.foot{
+    @include num(100%,2rem);
+    background:#2E2E2E;
+    @include flex($j:space-around);
+    a{
+        color: #878E96;
+        img{
+            position: relative;
+            top:.14rem;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1055px){
+    .head{
+        padding: 0 .2rem;
+    }    
+    .head .list li{
+        padding: 0 .1rem;
+    }
+    .con .swiper-pagination{
+        display: none;
+    }
+    .miai {
+        width: 100%;
+        height: 6rem;
+        overflow: hidden; 
+    }
+    .miai img {
+        width: 100%;
+        height: 6rem; 
+    }
+    .xin{
+        display: none;
+    }
+}
+
+@media screen and (max-width:685px){
+    .head{
+        width: 100%;
+        height: 1rem;
+        padding: 0 .2rem;
+    } 
+    .head .left img {
+        width: 0.3rem;
+        height: 0.3rem; 
+    }
+    .head .left span {
+        position: relative;
+        top: -.05rem;
+        font-size: .18rem;
+        padding: 0 0rem; 
+    }   
+    .head .list li{
+        padding: 0 .05rem;
+    }
+    .head .right{
+        display: none;
+    }
+    .con{
+        height: 2.5rem;
+    }
+    .box{
+        position: absolute;
+        top: 1rem;
+        z-index: 999;
+        width: 4rem;
+        left: 50%;
+        margin-left: -2rem;
+    }
+    .box h3 img{
+        width: 300px;
+    }
+    .box p {
+        text-align: center;
+        line-height: 30px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: .5rem; 
+    }
+    .box p img{
+        width: 30px;
+        height: 30px;
+    }
+    .miai {
+        width: 100%;
+        height: 3rem;
+        overflow: hidden; 
+    }
+    .miai img {
+        width: 100%;
+        height: 3rem; 
+    }
+    .youshi{
+        margin-top: .05rem;
+        height: 3rem;
+    }
+    .youshi .we{
+        margin-top: .1rem;
+        height: 2rem;
+    }
+}

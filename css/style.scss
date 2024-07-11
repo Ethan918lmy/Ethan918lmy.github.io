@@ -1,0 +1,714 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: .14rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "΢���ź�";
+  text-size-adjust: 100%; }
+
+ul, li {
+  list-style: none; }
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 625%; }
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none; }
+
+input, button {
+  outline: 0; }
+
+button {
+  cursor: pointer; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ccc; }
+input{-webkit-appearance:none;}
+
+@mixin num($w,$h){
+    width: $w;
+    height: $h;
+}
+@mixin flex($j:space-between){
+    display: flex;
+    justify-content: $j;
+    align-items: center;
+}
+
+html,body,.wrap{
+    @include num(100%,100%);
+}
+.head{
+    @include num(100%,1.5rem);
+    @include flex();
+    padding:.6rem;
+    .left{
+        img{
+            @include num(.5rem,.5rem);
+        }
+        span{
+            position: relative;
+            top:-.1rem;
+            font-size: .3rem;
+            padding: 0 .1rem;
+        }
+    }
+    .list{
+        display: flex;
+        li{
+            padding: 0 .4rem;
+            a{
+                color: #000;
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+    }
+    .right{
+        line-height: .3rem;
+        span{
+            background:red;
+            color: #fff;
+            padding: .02rem .03rem;
+        }
+    }
+}
+.con{
+    @include num(100%,5rem);
+    overflow: hidden;
+    position: relative;
+    .swiper-slide img{
+        @include num(100%,auto);
+    }
+}
+.boxone{
+    position: absolute;
+    top:2rem;
+    z-index: 999;
+    width: 7rem;
+    left: 50%;
+    margin-left: -3.5rem;
+    h3{
+        font-size: .5rem;
+        text-align: center;
+        font-weight: 100;
+    }
+    p{
+        text-align: center;
+        line-height: 50px;
+        background: rgba(0,0,0,0.5);
+        border-radius: .5rem;
+        img{
+            position: absolute;
+            left: 50%;
+            margin-left: -.2rem;
+            
+        }
+        input{
+            border: 0;
+            background: rgba(0,0,0,0);
+            color: #fff;
+            text-align: center;
+        }
+    }
+}
+.miai{
+    @include num(100%,8rem);
+    overflow: hidden;
+    margin-top: .5rem;
+    img{
+        @include num(100%,8rem);
+    }
+}
+.h3s{
+    @include num(100%,1rem);
+    h2{
+        text-align: center;
+        line-height: .3rem;
+        font-weight: bold;
+    }
+    .line{
+        @include num(80%,.01rem);
+        background: #ccc;
+        margin: 50px auto;
+    }
+}
+h4{
+    text-align: center;
+    margin-bottom: .6rem;
+    font-size: .2rem;
+    font-weight: bold;
+}
+.xin{
+    width: 800px;
+    height: 600px;
+    margin: 100px auto;
+}
+.row1,.row5{
+    width: 400px;
+    height: 80px;
+    margin: 0 auto;
+}
+.row2,.row4{
+    width: 550px;
+    height: 80px;
+    margin: 0 auto;
+    transform: translate(0,-20px);
+}
+.row3{
+    width: 700px;
+    height: 80px;
+    margin: 0 auto;
+    clear: both;
+    transform: translate(0,-40px);
+}
+.row4{
+    transform: translate(0,-60px);
+}
+.row5{
+    transform: translate(0,-80px);
+}
+.row6{
+    width: 250px;
+    height: 80px;
+    margin: 0 auto;
+    clear: both;
+    transform: translate(0,-100px);
+}
+.row7{
+    width: 100px;
+    height: 80px;
+    margin: 0 auto;
+    clear: both;
+    transform: translate(0,-120px);
+}
+.box1,.box2,.box3,.box4,.box5{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transform: rotate(45deg);
+    float: left;
+    box-shadow:0px 0px 8px 3px #666;
+}
+.box2,.box3,.box4,.box5{
+    margin-left: 50px;
+}
+.boxs{
+    float: left;
+    margin-left: 50px;;
+}
+.row1 .box2{
+    position: relative;
+    background: #fff;
+    box-shadow:0px 0px 0px 0px #fff;
+}
+.row1 .bos{
+    position: absolute;
+    transform: rotate(-45deg);
+    top:-30px;
+    left:-50px;
+}
+.youshi{
+    @include num(100%,5rem);
+    margin-top: 1rem;
+    clear: both;
+    h3{
+        text-align: center;
+        font-size: .2rem;
+        font-weight: bold;
+        line-height: .5rem;
+    }
+    p{
+        text-align: center;
+        color: #999;
+    }
+    .we{
+        @include num(100%,3rem);
+        margin-top: 1rem;
+        @include flex($j:space-around);
+        dl{
+            dt img{
+                @include num(.5rem,auto)
+            }
+            dd p{
+                color: red;
+            }
+        }
+    }
+}
+
+.foot{
+    @include num(100%,2rem);
+    background:#2E2E2E;
+    @include flex($j:space-around);
+    a{
+        color: #878E96;
+        img{
+            position: relative;
+            top:.14rem;
+        }
+    }
+    p{
+        text-align: center;
+        display: none;
+        color: #ccc;
+    }
+}
+
+
+
+@media screen and (max-width:1055px){
+    .head{
+        padding: 0 .2rem;
+    }    
+    .head .list li{
+        padding: 0 .1rem;
+    }
+    .con .swiper-pagination{
+        display: none;
+    }
+    .miai {
+        width: 100%;
+        height: 5rem;
+        overflow: hidden; 
+    }
+    .miai img {
+        width: 100%;
+        height: 6rem; 
+    }
+    .xin{
+        display: none;
+    }
+}
+.top{
+    position: fixed;
+    bottom: .1rem;
+    right: .1rem;
+    @include num(.5rem,.5rem);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: .5rem;
+}
+// 表白墙
+.biao{
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    background:url(../image/banner3.jpg) repeat-x;
+    background-size: cover;
+    padding:20px;
+}
+.biao .box{
+    width: 780px;
+    height: auto;
+    background:#fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+}
+.biao .box h3{
+    font-weight: normal;
+    height: 35px;
+    line-height: 35px;
+    padding-left:30px;
+}
+.biao .con input{
+    height: 30px;
+    border-radius:5px;
+    width: 280px;
+    float: left;
+    margin:20px 20px 20px 30px;
+}
+.biao .con #list{
+    float:left;
+}
+.biao #list img{
+    width: 50px;
+    float:left;
+    height: 60px;
+    line-height:60px;
+    margin:10px 0 0 3px;
+    height: 50px;
+    border-radius:5px;
+    opacity: 0.3;
+}
+.biao #list  img:first-child{
+    opacity:1;
+}
+.biao .con{
+    height: 80px;
+    line-height:80px;
+}
+.biao textarea{
+    border-radius:5px;
+    width: 730px;
+    height: 100px;
+    margin:0 0 10px 30px;
+}
+.biao .pp p{
+    position: absolute;
+    right:160px;
+}
+.biao .pp{
+    height: 60px;
+}
+.biao .pp p span{
+    font-size: 30px;
+}
+.biao .pp button{
+    position: absolute;
+    right:60px;
+    width: 80px;
+    height: 35px;
+    border-radius:5px;
+    background:skyblue;
+    color: #fff;
+    border:0;
+}
+.biao .aa{
+    height: 40px;
+    line-height:40px;
+    background:#f5f5f5;
+    padding-left:30px;
+}
+.biao .aa a{
+    padding:10px;
+    background:#fff;
+}
+.biao .cons{
+    height: 300px;
+    margin-top:5px;
+    overflow-y: auto;
+}
+.biao .cons dl{
+    height: 100px;
+    position: relative;
+    border-bottom: 1px dashed #ccc;
+}
+.biao .cons dl dt{
+    float:left;
+    width: 80px;
+    padding-left:30px;
+    padding-top:10px;
+}
+.biao .cons dl dd{
+    float:left;
+    padding-left:40px;
+    padding-top:10px;
+}
+.biao .cons dl dd h5{
+    font-weight:normal;
+    color: dodgerblue;
+    margin-top: -30px;
+}
+.biao .cons dl dt img{
+    width: 80px;
+    height: 80px;
+    border-radius:5px;
+}
+.biao .cons em{
+    position: absolute;
+    right:40px;
+    top:40px;
+    font-style:normal;
+    color: dodgerblue;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:685px){
+    .head{
+        width: 100%;
+        height: 1rem;
+        padding: 0 .2rem;
+    } 
+    .head .left img {
+        width: 0.3rem;
+        height: 0.3rem; 
+    }
+    .head .left span {
+        position: relative;
+        top: -.05rem;
+        font-size: .18rem;
+        padding: 0 0rem; 
+    }   
+    .head .list li{
+        padding: 0 .05rem;
+    }
+    .head .right{
+        display: none;
+    }
+    .con{
+        height: 2.5rem;
+    }
+    .boxone{
+        position: absolute;
+        top: 1rem;
+        z-index: 999;
+        width: 4rem;
+        left: 50%;
+        margin-left: -2rem;
+    }
+    .boxone h3 img{
+        width: 300px;
+    }
+    .boxone p {
+        text-align: center;
+        line-height: 30px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: .5rem; 
+    }
+    .boxone p img{
+        width: 30px;
+        height: 30px;
+    }
+    .miai {
+        width: 100%;
+        height: 3rem;
+        overflow: hidden; 
+    }
+    .miai img {
+        width: 100%;
+        height: 3rem; 
+    }
+    .youshi{
+        margin-top: .05rem;
+        height: 3rem;
+    }
+    .youshi .we dl dt img {
+        width: 0.25rem;
+        height: auto; 
+        text-align: center;
+        margin-left: .15rem;
+    }
+    .youshi .we dl dd{
+        font-size:.16rem;
+    }
+    .youshi .we{
+        margin-top: .1rem;
+        height: 2rem;
+    }
+    .foot{
+        a{
+            display: none;
+        }
+        p{
+            display: block;
+        }
+    }
+    .h3s .line{
+        margin: 20px auto;
+    }
+    .biao .box{
+        width: 380px;
+    }
+    .biao .con input{
+        width: 100px;
+    }
+    .biao .con #list{
+        float:left;
+    }
+    .biao #list img{
+        width: 20px;
+        margin:25px 0 0 3px;
+        height: 20px;
+    }
+    .biao textarea{
+        width: 330px;
+    }
+    .biao .pp p{
+        right:130px;
+    }
+    .biao .pp p span{
+        font-size: 25px;
+    }
+    .biao .pp button{
+        right:30px;
+    }
+    .biao .aa{
+        height: 30px;
+        line-height:30px;
+    }
+    .biao .cons{
+        height: 200px;
+    }
+    .biao .cons dl{
+        height: 80px;
+    }
+    .biao .cons dl dd h5{
+        font-size: .14rem;
+        margin-top: -40px;
+    }
+    .biao .cons dl dd h4{
+        font-size: .16rem;
+    }
+    .biao .cons dl dt img{
+        width: 60px;
+        height: 60px;
+    }
+    .biao .cons em{
+        right:30px;
+        top:30px;
+    }
+}
+@media screen and (max-width:405px){
+    .head{
+        width: 100%;
+        height: 1rem;
+        padding: 0 .1rem;
+    } 
+    .head .left img {
+        width: 0.25rem;
+        height: 0.25rem; 
+    }
+    .head .left span {
+        position: relative;
+        top: -.05rem;
+        font-size: .14rem;
+        padding: 0 0rem; 
+    }   
+    .head .list li{
+        padding: 0 .03rem;
+    }
+    .head .list li a{
+        font-size: .12rem;
+    }
+    .head .right{
+        display: none;
+    }
+    .con{
+        height: 2.5rem;
+    }
+    .boxone{
+        position: absolute;
+        top: 1rem;
+        z-index: 999;
+        width: 2rem;
+        left: 50%;
+        margin-left: -1rem;
+    }
+    .boxone h3 img{
+        width: 200px;
+    }
+    .boxone p {
+        text-align: center;
+        line-height: 30px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: .5rem; 
+    }
+    .boxone p input{
+        width: 80px;
+    }
+    .boxone p img{
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-left: -10px;
+        margin-top: 5px;
+    }
+    .miai {
+        width: 100%;
+        height: 2rem;
+        overflow: hidden; 
+        margin-top: 0;
+    }
+    .miai img {
+        width: 100%;
+        height: 2rem; 
+    }
+    .youshi{
+        margin-top: .05rem;
+        height: 3rem;
+    }
+    .youshi h3{
+        font-size: .16rem;
+    }
+    .youshi p{
+        font-size: .12rem;
+    }
+    .youshi .we dl dt img {
+        width: 0.2rem;
+        height: auto; 
+        text-align: center;
+        margin-left: .15rem;
+    }
+    .youshi .we dl dd h5{
+        font-size:.12rem;
+    }
+    .youshi .we{
+        margin-top: .1rem;
+        height: 2rem;
+    }
+    .foot{
+        a{
+            display: none;
+        }
+        p{
+            display: block;
+        }
+    }
+    .biao{
+        margin-top: .1rem;
+    }
+    .biao .box{
+        width: 280px;
+    }
+    .biao .con input{
+        width: 60px;
+    }
+    .biao .con #list{
+        float:left;
+    }
+    .biao #list img{
+        width: 18px;
+        margin:25px 0 0 3px;
+        height: 18px;
+        margin-left: .02rem;
+    }
+    .biao textarea{
+        width: 230px;
+    }
+    .biao .pp p{
+        right:120px;
+    }
+    .biao .pp p span{
+        font-size: 20px;
+    }
+    .biao .pp button{
+        right:20px;
+    }
+    .biao .cons{
+        height: 180px;
+    }
+    .biao .cons dl{
+        height: 80px;
+    }
+    .biao .cons dl dd{
+        padding-left: .1rem;
+    }
+    .biao .cons dl dd h5{
+        font-size: .12rem;
+        margin-top: -40px;
+    }
+    .biao .cons dl dd h4{
+        font-size: .14rem;
+    }
+    .biao .cons dl dt img{
+        width: 50px;
+        height: 50px;
+    }
+    .biao .cons em{
+        right:20px;
+        top:30px;
+    }
+}
